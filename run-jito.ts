@@ -7,9 +7,8 @@ import bs58 from 'bs58';
 
 const MINIMUM_JITO_TIP = 1_000; // lamports
 const ENDPOINT = 'https://api.mainnet-beta.solana.com';
-const JITO_CLIENT = new JitoJsonRpcClient('https://mainnet.block-engine.jito.wtf/api/v1', "");
 const JITO_RPC_URL = 'https://mainnet.block-engine.jito.wtf/api/v1';
-const SIMULATE_ONLY = false;
+const JITO_CLIENT = new JitoJsonRpcClient(JITO_RPC_URL, "");
 const TOKEN_MINT = new PublicKey('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'); // USDC mint acc
 const RECEIVER_ADDRESS = new PublicKey('2QPAGadWocRV5Veqd4LBFann6FUqfNEq7of67Rqckkxs');
 
